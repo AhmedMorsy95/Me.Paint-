@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="120.0" layoutX="26.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="150.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0">
+        <buttons>
+            <Button contentDisplay="TOP" mnemonicParsing="false" text="Rectangle">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+          <Button mnemonicParsing="false" text="Triangle" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Ellipse">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Square">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="LineSegment">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Circle" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+        </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <Label layoutX="30.0" layoutY="132.0" text="Select Shape:" textFill="#000000bf" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="700.0">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Label>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="30.0" layoutY="200.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="30.0">
+        <buttons>
+          <Button mnemonicParsing="false" text="Move">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Edit...">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+        </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="31.0" layoutY="240.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="30.0">
+         <buttons>
+            <Button mnemonicParsing="false" text="Colorize">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Copy">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+         </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="30.0" layoutY="280.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="30.0">
+         <buttons>
+            <SplitMenuButton alignment="CENTER_RIGHT" mnemonicParsing="false" prefWidth="210.0" text="InstalledPlugins">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </SplitMenuButton>
+         </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="31.0" layoutY="161.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="250.0">
+         <buttons>
+            <SplitMenuButton alignment="TOP_RIGHT" mnemonicParsing="false" prefWidth="210.0" text="Shape" textAlignment="RIGHT">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </SplitMenuButton>
+         </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="30.0" layoutY="320.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button mnemonicParsing="false" text="Quit">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Delete" />
+         </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+      <Canvas cache="true" disable="true" height="325.0" layoutX="280.0" layoutY="60.0" pickOnBounds="true" width="590.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <effect>
+            <ColorInput height="325.0" paint="WHITE" width="590.0" />
+         </effect>
+      </Canvas>
+      <ButtonBar blendMode="HARD_LIGHT" buttonMinWidth="100.0" layoutX="30.0" layoutY="78.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button mnemonicParsing="false" text="Redo">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Undo">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Button>
+         </buttons>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </ButtonBar>
+   </children>
+</AnchorPane>
