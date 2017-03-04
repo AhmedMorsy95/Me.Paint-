@@ -1,3 +1,4 @@
+package model;
 
 public interface DrawingEngine {
 	public void addShape(Shape shape);

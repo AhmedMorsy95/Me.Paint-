@@ -1,28 +1,34 @@
+package model;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.util.Map;
 
-public class Circle implements Shape {
+public class Ellipse implements Shape{
     protected Point position;
-    protected Map<String,Double>properties; 
-    protected Double raduis,area,perimeter;
+    protected double width,height;
+    protected Map<String,Double>properties;
     protected Color c,fillColor;
 	public void setPosition(Point position) {
      	this.position=position;
   	}
-
+	public void setWidth(Double a) {
+     	this.width=a;
+  	}
+	public void setHeight(Double a) {
+     	this.height=a;
+  	}
+    
   	public Point getPosition() {
     	return this.position;
   	}
-
   	public void setProperties(Map<String, Double> given) {
   		this.properties=given; 
   	}
   	/*public void setProperties(Map<String, Double> properties) {
-	   properties.put("raduis", raduis);
-	   properties.put("perimeter", this.raduis*2.0*Math.PI);
-	   properties.put("area", this.raduis*raduis*Math.PI);
+	   properties.put("width", this.width);
+	   properties.put("height", this.height);
   	}*/
 
   	public Map<String, Double> getProperties() {

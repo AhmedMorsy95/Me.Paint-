@@ -1,32 +1,34 @@
+package model;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
-import java.util.*;;
+import java.util.Map;
 
-public class Square implements Shape {
-    protected Point position;
+public class LineSegment implements Shape{
+    protected Point points[] = new Point[2];
     protected Map<String,Double>properties; 
-    protected Double length;
     protected Color c,fillColor;
-
-    public void setPosition(Point position) {
-     	this.position=position;
+	public void setPosition(Point pos1) {
+		
   	}
-	public void setLength(Double a) {
-     	this.length=a;
+	public void setPosition(Point a[]) {
+		for(int i=0;i<2;i++)
+			this.points[i]=a[i];
   	}
-
+    
   	public Point getPosition() {
-    	return this.position;
+    	return this.points[0];
   	}
+  	public Point[] getPosition2() {
+    	return this.points;
+  	}
+
   	public void setProperties(Map<String, Double> given) {
   		this.properties=given; 
   	}
-    /*
-  	public void setProperties(Map<String, Double> given) {
-  	   properties.put("length", this.length);
-	   properties.put("Area", this.length*this.length);
-	   properties.put("Perimeter", this.length*4);
+  	/*public void setProperties(Map<String, Double> properties) {
+	   properties.put("length", this.points[0].distance(this.points[1]));
   	}*/
 
   	public Map<String, Double> getProperties() {

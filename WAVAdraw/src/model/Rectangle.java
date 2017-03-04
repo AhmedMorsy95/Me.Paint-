@@ -1,32 +1,28 @@
+package model;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.util.Map;
 
-public class Ellipse implements Shape{
+public class Rectangle implements Shape {
     protected Point position;
-    protected double width,height;
-    protected Map<String,Double>properties;
+    protected Map<String,Double>properties; 
+    protected Double length,width;
     protected Color c,fillColor;
 	public void setPosition(Point position) {
      	this.position=position;
   	}
-	public void setWidth(Double a) {
-     	this.width=a;
-  	}
-	public void setHeight(Double a) {
-     	this.height=a;
-  	}
-    
+
   	public Point getPosition() {
     	return this.position;
   	}
   	public void setProperties(Map<String, Double> given) {
   		this.properties=given; 
   	}
-  	/*public void setProperties(Map<String, Double> properties) {
-	   properties.put("width", this.width);
-	   properties.put("height", this.height);
+  /*	public void setProperties(Map<String, Double> properties) {
+	   properties.put("length", this.length);
+	   properties.put("width" , width);
   	}*/
 
   	public Map<String, Double> getProperties() {
@@ -53,4 +49,6 @@ public class Ellipse implements Shape{
 	   
 	}
    
+   
 }
+
